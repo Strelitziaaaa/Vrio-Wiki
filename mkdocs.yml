@@ -1,0 +1,145 @@
+site_name: Vrio Wiki
+
+repo_url: https://github.com/Strelitziaaaa/Vrio-Wiki
+repo_name: Vrio-wiki/Vrio-wiki
+
+# Copyright
+copyright: 'Copyright &copy; 2023 - 2024 Vrio Wiki Team'
+
+
+
+nav:
+  - 简介:
+    - Getting Started: index.md
+    - 关于本项目: intro/about.md
+    - 如何参与: intro/htc.md
+  - 学习路线: 
+    - 计算机科学与技术: path/Computer science.md
+    - 数据结构: path/Data structure map.md
+    - C语言: path/c.md
+    - Java: path/Java map.md
+    - Python: path/Python map.md
+    - Linux: path/Linux map.md
+  - 数据结构:
+    - 绪论: data structure/overview.md
+    - 线性表: data structure/linear tables.md
+    - 栈、队列和数组: data structure/stacks.md
+    - 串: data structure/string.md
+    - 树与二叉树: data structure/tree.md
+    - 图: data structure/graphs.md
+    - 查找: data structure/find.md
+    - 排序: data structure/sort.md
+  - 计算机组成原理:
+    - 计算机系统概述: composition principle/overview.md
+    - 数据的表示和运算: composition principle/data representation.md
+    - 存储系统: composition principle/storage system.md
+    - 指令系统: composition principle/command system.md
+    - 中央处理器: composition principle/CPU.md
+    - 总线: composition principle/bus.md
+    - 输入/输出系统: composition principle/IO system.md
+  - 操作系统: 
+    - 计算机系统概述: operating system/overview.md
+    - 进程与线程: operating system/processes and threads.md
+    - 内存管理: operating system/memory management.md
+    - 文件管理: operating system/file management.md
+    - 输入/输出(I/O)管理: operating system/IO management.md
+  - 计算机网络:
+    - 计算机网络体系结构: network/system.md
+    - 物理层: network/physical layer.md
+    - 数据链路层: network/data link layer.md
+    - 网络层: network/network layer.md
+    - 传输层: network/transport layer.md
+    - 应用层: network/application layer.md
+  - 数据库: 
+    - 导读: database/about.md  
+  - 算法: 
+    - 算法基础: algorithm/foundation.md
+    - 10大经典排序: algorithm/sort.md
+  - 编程语言: 
+    - C语言: language/C.md
+    - Java: language/Java.md
+    - Python: language/Python.md
+  - 数学: 
+    - 微积分: math/calculus.md
+    - 离散数学: math/discrete.md
+    - 概率论: math/probability theory.md
+  - 比赛相关: 
+    - 比赛相关简介: contest/about.md
+    - 赛事: contest/events.md
+    - 题型: contest/questions.md
+  - 工具软件: 
+    - 代码编辑工具: tools/editing tools.md
+    - 评测工具: tools/evaluation tools.md
+  - 学习总结: 
+    - 实习经验总结: summary/exercitation.md
+    - 校招经验总结: summary/school recruitment.md
+
+ 
+theme:
+  name: material
+
+  language: zh
+
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    # 内置搜索插件
+  plugins:
+    - search:
+      lang:
+      - en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      # 搜索结果权重
+      boost: 2
+      # 排版插件
+    - typeset
+    # 优化插件
+    - optimize
+    # 隐私插件
+    - privacy
+
+
+  favicon: favicon.ico
+  icon:
+    logo: material/school
+
+  features: 
+    # 导航选项卡
+    - content.action.edit
+    - navigation.tabs
+    - navigation.instant
+    # 导航路径
+    - navigation.path
+    # 锚点跟踪
+    - navigation.tracking
+    # 返回顶部按钮
+    - navigation.top
+
+  font:
+    text: Fira Sans
+    code: Fira Mono
+
+extra: 
+  disqus: Vrio-wiki/Vrio-wiki
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+  githash: ''
+  analytics:
+    provider: google
+    property: UA-124485594-1
+
+
+
